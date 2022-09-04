@@ -8,7 +8,9 @@ specifiers:
   '@tailwindcss/typography': ^0.5.7
   '@types/node': 18.7.14
   '@types/react': 18.0.18
+  '@types/react-copy-to-clipboard': ^5.0.4
   '@types/react-dom': 18.0.6
+  '@types/react-syntax-highlighter': ^15.5.5
   autoprefixer: ^10.4.8
   eslint: 8.23.0
   eslint-config-next: 12.2.5
@@ -29,6 +31,8 @@ dependencies:
   '@mdx-js/loader': 2.1.3_webpack@5.74.0
   '@mdx-js/react': 2.1.3_react@18.2.0
   '@next/mdx': 12.2.5_hbo3tj2k5fhsh63l2ltjrymaq4
+  '@types/react-copy-to-clipboard': 5.0.4
+  '@types/react-syntax-highlighter': 15.5.5
   install: 0.13.0
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
   prop-types: 15.8.1
@@ -449,11 +453,23 @@ packages:
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
+  /@types/react-copy-to-clipboard/5.0.4:
+    resolution: {integrity: sha512-otTJsJpofYAeaIeOwV5xBUGpo6exXG2HX7X4nseToCB2VgPEBxGBHCm/FecZ676doNR7HCSTVtmohxfG2b3/yQ==}
+    dependencies:
+      '@types/react': 18.0.18
+    dev: false
+
   /@types/react-dom/18.0.6:
     resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
     dependencies:
       '@types/react': 18.0.18
     dev: true
+
+  /@types/react-syntax-highlighter/15.5.5:
+    resolution: {integrity: sha512-QH3JZQXa2usAvJvSsdSUJ4Yu4j8ReuZpgRrEW+XP+Rmosbn425YshW9iGEb/pAARm8496axHhHUPRH3UmTiB6A==}
+    dependencies:
+      '@types/react': 18.0.18
+    dev: false
 
   /@types/react/18.0.18:
     resolution: {integrity: sha512-6hI08umYs6NaiHFEEGioXnxJ+oEhY3eRz8VCUaudZmGdtvPviCJB8mgaMxaDWAdPSYd4eFavrPk2QIolwbLYrg==}
