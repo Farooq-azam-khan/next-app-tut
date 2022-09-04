@@ -3,15 +3,15 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const CodeBlock = ({ children }: any) => {
 
-    return (<pre><code className='flex justify-between items-center '>
-        <SyntaxHighlighter language="python">
-            {children}
-        </SyntaxHighlighter>
+    return (<div className='flex flex-col items-start mt-5'>
         <CopyToClipboard text={children} className=" px-4 py-2 textinput mb-2">
             <button>Copy Code</button>
         </CopyToClipboard>
 
-    </code></pre>)
+        <SyntaxHighlighter language="python">
+            {children}
+        </SyntaxHighlighter>
+    </div>)
 }
 
 export default CodeBlock 
