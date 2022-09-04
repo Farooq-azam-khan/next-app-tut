@@ -4,6 +4,8 @@ import SyntaxHighlighter from 'react-syntax-highlighter'
 //import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import CodeBlock from '../components/CodeBlock.tsx'
+import 'katex/dist/katex.min.css';
+import { InlineMath, BlockMath } from 'react-katex';
 
 export const meta = {
     author: 'Farooq Azam Khan'
@@ -13,8 +15,7 @@ export const meta = {
 This highlights how I will write my blogs with MDX. 
 
 ## example of math formula
-
-a^2+b^2 = c^2
+<BlockMath math="a^2+b^2 = c^2" /> 
 
 ## code blocks
 

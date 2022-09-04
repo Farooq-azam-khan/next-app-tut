@@ -15,9 +15,11 @@ specifiers:
   install: ^0.13.0
   next: 12.2.5
   postcss: ^8.4.16
+  prop-types: ^15.8.1
   react: 18.2.0
   react-copy-to-clipboard: ^5.1.0
   react-dom: 18.2.0
+  react-katex: ^3.0.1
   react-syntax-highlighter: ^15.5.0
   tailwindcss: ^3.1.8
   typescript: 4.8.2
@@ -29,9 +31,11 @@ dependencies:
   '@next/mdx': 12.2.5_hbo3tj2k5fhsh63l2ltjrymaq4
   install: 0.13.0
   next: 12.2.5_biqbaboplfbrettd7655fr4n2y
+  prop-types: 15.8.1
   react: 18.2.0
   react-copy-to-clipboard: 5.1.0_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-katex: 3.0.1_sh5qlbywuemxd2y3xkrw2y2kr4
   react-syntax-highlighter: 15.5.0_react@18.2.0
   webpack: 5.74.0
 
@@ -944,6 +948,11 @@ packages:
 
   /commander/2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
+    dev: false
+
+  /commander/8.3.0:
+    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
+    engines: {node: '>= 12'}
     dev: false
 
   /concat-map/0.0.1:
@@ -2014,6 +2023,13 @@ packages:
       object.assign: 4.1.4
     dev: true
 
+  /katex/0.16.2:
+    resolution: {integrity: sha512-70DJdQAyh9EMsthw3AaQlDyFf54X7nWEUIa5W+rq8XOpEk//w5Th7/8SqFqpvi/KZ2t6MHUj4f9wLmztBmAYQA==}
+    hasBin: true
+    dependencies:
+      commander: 8.3.0
+    dev: false
+
   /kleur/4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
@@ -2913,6 +2929,17 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  /react-katex/3.0.1_sh5qlbywuemxd2y3xkrw2y2kr4:
+    resolution: {integrity: sha512-wIUW1fU5dHlkKvq4POfDkHruQsYp3fM8xNb/jnc8dnQ+nNCnaj0sx5pw7E6UyuEdLRyFKK0HZjmXBo+AtXXy0A==}
+    peerDependencies:
+      prop-types: ^15.8.1
+      react: '>=15.3.2 <=18'
+    dependencies:
+      katex: 0.16.2
+      prop-types: 15.8.1
+      react: 18.2.0
+    dev: false
 
   /react-syntax-highlighter/15.5.0_react@18.2.0:
     resolution: {integrity: sha512-+zq2myprEnQmH5yw6Gqc8lD55QHnpKaU8TOcFeC/Lg/MQSs8UknEA0JC4nTZGFAXC2J2Hyj/ijJ7NlabyPi2gg==}
